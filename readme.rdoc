@@ -1,0 +1,49 @@
+This is from me:
+This is Rack.  Rack, meet world.
+
+
+And this is from Rack:
+Rack provides a minimal, modular, and adaptable interface for developing web applications in Ruby. By wrapping HTTP requests and responses in the simplest way possible, it unifies and distills the API for web servers, web frameworks, and software in between (the so-called middleware) into a single method call.
+
+The exact details of this are described in the Rack specification, which all Rack applications should conform to.
+
+Supported web servers
+
+The included handlers connect all kinds of web servers to Rack:
+
+WEBrick
+
+FCGI
+
+CGI
+
+SCGI
+
+LiteSpeed
+
+Thin
+
+These web servers include Rack handlers in their distributions:
+
+Ebb
+
+Fuzed
+
+Glassfish v3
+
+Phusion Passenger (which is mod_rack for Apache and for nginx)
+
+Puma
+
+Reel
+
+Unicorn
+
+unixrack
+
+uWSGI
+
+yahns
+
+Any valid Rack app will run the same on all these handlers, without changing anything.
+
