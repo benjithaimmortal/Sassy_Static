@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Indie+Flower');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+a:link {
+    color: #ececec;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #ececec;
+}
+
+ul {
+	list-style: none inside;
+	padding: 0;
+}
+
+/* header */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  font-family: "Helvetica", sans-serif;
+  color: #E0E0E0;
+  background: #777;
+  z-index: 1;
+}
+.navbar-site-emblem {
+  float: left;
+  margin-right: auto;
+  color: #E0E0E0;
+  padding: 15px 1rem;
+}
+/* header drop-down menu */
+.dropdown {
+  float: right;
+  background-color: none;
+  border-radius: 10px;
+  padding: 15px 15px;
+}
+.dropdown:hover .dropdown-nav {
+  color: white;
+  padding-bottom: 10px;
+}
+.dropdown:hover .dropdown-items {
+  display: inline-block;
+  margin: 0 auto;
+}
+.dropdown-items {
+  display: none;
+  right: 0;
+  font-size: 1.1em;
+  background: #777;
+  position: absolute;
+  z-index: 1;
+}
+.drop-btn {
+  padding: 5px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("https://scontent-icn1-1.xx.fbcdn.net/v/t31.0-8/14352245_10111625150028044_3295383467976893359_o.jpg?_nc_cat=0&oh=3748cf2d192e113b7430eb759a644de9&oe=5BE8188F");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("https://lh3.googleusercontent.com/RT8qKhqBrY_VLFjifu0fPXDbfhCFNEnX3i48y8HAvQBmym6Fx_kNby5N05wdByHS6f9E4yVYeGzjoHQ=w1920-h1080-rw-no");
+  min-height: 100%;
+}
+
+.bgimg-3 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/a9/Ba%60alat.jpg");
+  min-height: 100%;
+	border-top-width: 10px;
+  .box {
+		margin-top: -10%;
+	  display: inline-block;
+  	border-color: whitesmoke;
+  	border-style: solid;
+  	padding: 10px;
+  	border-width: 2px;
+	}
+	.input-field {
+    border: 7px solid whitesmoke;
+    background: whitesmoke;
+    max-width: 40vw;
+  }
+}
+
+.bgimg-4 {
+  background-image: url("/img/seoraksan_86.jpg");
+  min-height: 400px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.services {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+  border: 0;
+  font: calc(.6em + 0.5vw) "Lato", "Helvetica", sans-serif;
+  text-align: center;
+  line-height: calc(0.9em + 0.5vw);
+  color: rgb(31, 31, 31);
+  li {
+    padding: 6px 12px;
+    margin: 1px;  
+    background: #0b693e;
+    color: #ececec;
+    border-radius: 10px;
+  }
+}
+
+
+.splitter, .footer {
+  padding: 50px 80px;
+}
+
+.splitter {
+  color: #777;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+.footer {
+  position: relative;
+  color: #ddd;
+  text-align: right;
+  background-color: #282E34;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}

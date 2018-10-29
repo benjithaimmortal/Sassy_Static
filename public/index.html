@@ -1,9 +1,86 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="stylesheet/style.css">
+		<link rel="stylesheet" href="stylesheet/sass/style.scss">
 	</head>	
 	<body>
-		<h1>Hello World</h1>
-		<img src="img/seoraksan_86.jpg" alt="Seoraksan">
+		<header class="navbar">
+			<a href="https://monjibram.com" target="_blank" class="navbar-site-emblem">
+				<i class="fa fa-behance-square fa-lg"></i>nji
+			</a>
+			<div class="dropdown">
+				<div class="fa fa-bars fa-lg dropdown-nav"></div>
+				<ul class="dropdown-items">
+					<li class="drop-btn"><a href="#english">English</a></li>
+					<li class="drop-btn"><a href="#korean">Korean</a></li>
+					<li class="drop-btn"><a href="#hebrew">Hebrew</a></li>
+					<li class="drop-btn"><a href="#contact">Contact</a></li>
+					<li class="drop-btn"><a href="#me">Me</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="bgimg-1">
+			<div class="caption">
+				<span class="border">LINGUA COUTURE</span>
+			</div>
+		</div>
+		
+		<div class="splitter" id="english">
+			<h3>English</h3>
+			<p style="text-align: justify">
+				Lorem ipsum dolor amet cardigan polaroid ethical distillery godard subway tile kitsch glossier tumblr microdosing synth iceland gluten-free DIY artisan. Cred shabby chic direct trade ugh cornhole four loko swag williamsburg photo booth activated charcoal neutra skateboard DIY. Brooklyn cray kitsch tumblr hoodie four dollar toast. Tumblr portland hashtag humblebrag neutra.
+			</p>
+		</div>
+		
+		<div class="bgimg-2" id="korean">
+			<div class="caption">
+				<span class="border">Korean</span>
+			</div>
+			<div></div>
+		</div>
+		
+		<div class="splitter services" id="hebrew">
+			<h3>Hebrew, Aramaic, Arabic</h3>
+			<ul class="services">
+				<li>Reading</li>
+				<li>Writing</li>
+				<li>Listening</li>
+				<li>Speaking</li>
+				<li>Typing</li>
+				<li>Deleting</li>
+			</ul>
+		</div>
+		
+		<div class="bgimg-3" id="contact">
+			<div class="caption">
+			 <span class="border box">
+				 A CONTACT BOX<br>
+				<form action=# class="input-box">
+					<div><input type=email class="input-field" placeholder="Your Email Address"></div>
+					<div><input type=text class="input-field" placeholder="A Quick Note"></div>
+					<div><button type="submit" class="input-field">Submit</button></div>
+					</form>
+				</span>
+			</div>
+		</div>
+		
+		<div class="splitter" id="me">
+			<h3>Some backstory</h3>
+			<p style="text-align: justify;">Kombucha godard vinyl hashtag ramps heirloom pop-up man bun neutra vexillologist. You probably haven't heard of them skateboard sustainable thundercats. Deep v cred stumptown 90's twee bushwick street art, seitan cornhole brooklyn. Keffiyeh kickstarter vegan mustache cronut, beard trust fund shaman chia brunch lomo iPhone microdosing.
+			</p>
+			<div>
+				<p style="float: left; max-width: 60%; color: black; text-align: justify;">This section is about that there picture. Before they sold out squid photo booth kogi taiyaki 3 wolf moon pop-up heirloom drinking vinegar church-key butcher readymade. Kickstarter vegan plaid lo-fi letterpress pok pok.</p>
+				<img style="float: right; max-width: 30%; padding: 23px 0 18px;" src="https://images.unsplash.com/photo-1522441972941-974509a8d5cf?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=3331f0641e98551cbd5cb1c731d084ed" alt="">
+			</div>
+		</div>
+		
+		<div class="bgimg-4" style="clear: both;">
+			<div class="caption">
+				<span class="border">really, <a href="#contact">contact him</a></span>
+			</div>
+		</div>
+		
+		<div class="footer">
+			Here's some footer stuff and links
+		</div>		
 	</body>
 </html>
