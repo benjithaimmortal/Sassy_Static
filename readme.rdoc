@@ -1,1 +1,1 @@
-Yay, this is the beginnings of a server! The end.
+This was an attempt at making a static site server framework myself, as Rack middleware, which quickly turned into using the shortcuts in Rack::Static's existing framework to just build a static website. If you're looking for my own work, check out Stack-a-Rack.
