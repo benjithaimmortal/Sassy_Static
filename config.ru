@@ -1,16 +1,11 @@
-class Hello
-    def self.call(env)
-        [   200,
-            {"Content-Type" => "text/html"},
-            File.open('./public/index.html', File::RDONLY)
-        ]
-    end
-end
+require 'sass/plugin/rack'
 
 #middleware
 use Rack::Static,
-    :urls => ["/stylesheets"],
-    :root => ["public"]
+  :urls => [""],
+  :root => ["public"],
+  :index => 'index.html'
 
-puts "Hi. Rack's startup time was #{Time.now}.  Server is booting..."
-run Hello
+use Sass::Plugin::Rack
+
+run Rack::File.new('/')
